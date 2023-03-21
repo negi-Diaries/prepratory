@@ -15,14 +15,31 @@
     <nav class="navbar navbar-expand-lg navbar-internal">
         <div class="container-fluid navbar-internal">
             <a class="navbar-brand mx-3 logo" href="#">Virtual Library</a>
-            <div>
-                <button type="submit" class="btn btn-secondary readMoreButton" ><a class="readMoreHref" href="../index.html">Back</a></button>
-                <!-- <button type="button" class="btn btn-danger">Danger</button> -->
+            <div class="hamburgerParent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            <button type="submit" class="btn backButton"><a class="btn btn-secondary backHref"
+                                    href="../index.html">Back</a></button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
+    <h1 class="detail">Details page</h1>
+    <div class="popUpImg active">
+        <span><img class="closeImg" src="../icons/close.svg" alt=""></span>
+        <img class="image" src="../images/three.jfif" alt="">
+    </div>
     <div>
-        <div class="readMoreSection">
+        <div class="readMoreSection ">
             <div class="uploadSection">
                 <img class="readMoreImg" src="../images/three.jfif" alt="">
                 <!-- <button type="button" class="btn btn-primary btnAddBook">Primary</button> -->
@@ -30,29 +47,33 @@
             <div class="BookFormSection my-3">
                 <label for="">Book name</label>
                 <br>
-                <h3>Twenty Yawns </h3>
+                <h3>Indian Polity </h3>
                 <hr>
                 <br>
                 <label for="">Author</label>
                 <br>
-                <h3>Jane Smiley</h3>
+                <h3>M lakshiKanth</h3>
                 <hr>
                 <br>
                 <label for="">Published at</label>
                 <br>
-                <h3>20th july, 2002</h3>
+                <h3>1st jan, 1947</h3>
                 <hr>
                 <br>
                 <label for="">Description</label>
                 <br>
-                
+
                 <br>
                 <!-- <textarea class="inputText " name="" id="" cols="120" rows="5"></textarea> -->
-                <h3 class="description">Pulitzer Prize winner Jane Smiley’s first picture book, illustrated by Caldecott Honor artist Lauren Castillo, evokes the splashy fun of the beach and the quietude of a moonlit night, with twenty yawns sprinkled in for children to discover and count.</h3>
+                <h3 class="description">Indian Polity by M Laxmikanth needs no introduction. For the last few years, it has been the most popular and comprehensive book on the subject and has been a consistent bestseller for many years. It has become a must-read for Civil Services aspirants appearing in various competitive examinations, especially UPSC Prelims and Main. The wide range and scope of issues that are covered in the book also make the book invaluable students who want reliable research material and information on the country’s political and constitutional issues.</h3>
                 <br>
             </div>
         </div>
-</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
 </body>
 
 </html>

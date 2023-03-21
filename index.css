@@ -2,13 +2,26 @@ nav{
     background-color: slategray;
 }
 
+body{
+    align-items: center;
+}
+
+
 .logo{
     font-weight: 400;
 }
 
+.detail{
+    text-transform: uppercase;
+    text-align: center;
+    color: #BFACE2;
+
+}
+
 .flexable{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     padding: 1px 5px;
     flex-wrap: wrap;
 
@@ -38,21 +51,37 @@ img{
     border: none;
 }
 
-.readMoreHref{
-    text-decoration: none;
+.more{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: #BFACE2;
+}
+
+.backButton{
     color: white;
+    padding: 0;
 }
 
 /* readmore  */
 
-.readMoreButton{
+.backHref{
+    text-decoration: none;
+    height: 37px;
     width: 110px;
+    /* padding: 20px 20px; */
+    /* width: 400px; */
+    /* margin-top: 10px; */
 }
 
 .readMoreSection{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .description{
@@ -70,4 +99,63 @@ h3{
 
 .readMoreImg{
     border-radius: 10px;
+    cursor: pointer;
 }
+
+
+.popUpImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 26rem; */
+}
+
+.image{
+    /* display: block; */
+    /* align-items: center; */
+    height: 26rem;
+    border-radius: 10px;
+}
+
+.closeImg{
+    position: absolute;
+    top: 26px;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    /* body {
+      background-color: lightgreen;
+    } */
+
+    .hamburgerParent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .readMoreButton{
+        margin-top: 10px;
+        width: 100%;
+    }
+  }
+
+
+  .active.popUpImg{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .image{
+        height: 20rem;
+    }
+  }
